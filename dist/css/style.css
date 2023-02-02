@@ -1,3 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: #000;
+  color: #091E42;
+}
+
+header .navbar {
+  padding: 8px 142px;
+  display: flex;
+  align-items: center;
+}
+header img {
+  width: 120px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
