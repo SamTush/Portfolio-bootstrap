@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+
 $primary-color: #ffe7d3;
-$accent-color: #ff652f;
-$primary-text-color: #091E42;
+$accent-color: #2233ca;
+$secondary-color: #ebebff;
+$primary-text-color: #091e42;
 $text-color: #fff;
+$text-color-light: #6b778c;
+$font-family: 'Poppins', sans-serif;
+$font-weights: (
+    "regular": 200,
+    "medium": 400,
+    "bold": 700,
+);
 
 *{
     box-sizing: border-box;
@@ -10,7 +20,23 @@ $text-color: #fff;
 }
 
 body {
-    color: $primary-text-color;
+    font-family: $font-family;
+    background-color: $secondary-color;
+
+    .socials ul {
+        list-style: none;
+        display: flex;
+        padding: 0px;
+        gap: 20px;
+    }
+
+    .socials img {
+        height: 19.99px;
+    }
+
+    button {
+        margin: 8px 0;
+    }
 }
 
 header {
@@ -18,13 +44,14 @@ header {
         padding: 8px 142px 50px 142px;
         display: flex;
         align-items: center;
+        background-color: #fff;
     }
 
-    img {
+    nav img {
         width: 120px;
     }
 
-    ul {
+    nav ul {
         list-style: none;
         display: flex;
         flex-direction: row;
@@ -41,6 +68,22 @@ header {
         background-position: right top;
         padding: 80px;
         background-color: #fff;
+        border-bottom-left-radius: 65px;
+
+        h1 {
+            font-weight: map-get($font-weights, bold);
+            margin-top: 122px;
+        }
+
+        h6 {
+            color: #2233CA;
+            font-weight: map-get($font-weights, regular);
+        }
+    }
+
+    .head {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -51,6 +94,51 @@ section {
     .cards {
         max-width: 956px;
     }
+
+    .card {
+        margin-top: 120px;
+        border: 1px solid #fff;
+        padding: 24px;
+        border-radius: 12px;
+    }
+
+    .card img {
+        width: 544px;
+    }
+
+    .card-body{
+        margin-left: 24px;
+    }
+
+    .subtitle{
+        display: flex;
+        flex-direction: row;
+
+        ul {
+            display: flex;
+            gap: 24px;
+            color: $text-color-light;
+        }
+    }
+
+    .small-btn ul{
+        list-style: none;
+        padding: 0px;
+        display: flex;
+        gap: 12px;
+
+        li{
+            background-color: $secondary-color;
+            padding: 2px 14px;
+            border-radius: 12px;
+        }
+    }
+}
+
+.self {
+    background-color: $text-color;
+    padding: 142px 0px;
+    margin-top: 122px;
 }
 
 footer {
