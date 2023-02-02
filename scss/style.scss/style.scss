@@ -15,7 +15,7 @@ body {
 
 header {
     .navbar {
-        padding: 8px 142px;
+        padding: 8px 142px 50px 142px;
         display: flex;
         align-items: center;
     }
@@ -31,5 +31,15 @@ header {
         gap: 20px;
         align-items: center;
         text-align: center;
+    }
+
+    .main-head {
+        height: 100vh;
+        background: url("../assets/images/header-bg.png");
+        background-size: 97%;
+        background-repeat: no-repeat;
+        background-position: right top;
+        padding: 80px;
+        background-color: #fff;
     }
 }
