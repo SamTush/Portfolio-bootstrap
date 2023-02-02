@@ -43,3 +43,29 @@ header {
         background-color: #fff;
     }
 }
+
+section {
+    display: flex;
+    justify-content: center;
+
+    .cards {
+        max-width: 956px;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    form {
+        max-width: 447px;
+    }
+}

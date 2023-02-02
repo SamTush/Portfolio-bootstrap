@@ -32,4 +32,26 @@ header .main-head {
   background-position: right top;
   padding: 80px;
   background-color: #fff;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+section .cards {
+  max-width: 956px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+footer h2 {
+  text-align: center;
+}
+footer p {
+  text-align: center;
+}
+footer form {
+  max-width: 447px;
 }/*# sourceMappingURL=style.css.map */
