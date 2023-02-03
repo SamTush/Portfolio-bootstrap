@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
 
 $primary-color: #ffe7d3;
-$accent-color: #2233ca;
+$accent-color: #6070FF;
 $secondary-color: #ebebff;
 $primary-text-color: #091e42;
 $text-color: #fff;
@@ -209,17 +209,55 @@ section {
 footer {
     display: flex;
     flex-direction: column;
+    background-color: $text-color;
+    color: $text-color;
+    width: 100%;
+
+    .bg-color {
+        background-color: $accent-color;
+        border-top-left-radius: 65px;
+        padding: 142px 0px 95px 0px;
+        background-image: url("../assets/images/contact-bg.png");
+        background-size: 1177px, 655px;
+        background-repeat: no-repeat;
+        background-position-y: 50px;
+        background-position-x: center;
+    }
 
     h2 {
-        text-align: center;
+        font-weight: map-get($font-weights, bold);
+        display: flex;
+        justify-content: center;
     }
 
     p {
+        display: flex;
+        font-weight: map-get($font-weights, medium);
+        justify-content: center;
         text-align: center;
     }
 
+    .row {
+        padding: 0px 24px;
+    }
+
+    label {
+        display: none !important;
+    }
+
     form {
-        max-width: 447px;
+        width: 447px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+
+        button {
+            width: 142px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }
 

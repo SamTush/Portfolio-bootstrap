@@ -167,15 +167,49 @@ section .desktop {
 footer {
   display: flex;
   flex-direction: column;
+  background-color: #fff;
+  color: #fff;
+  width: 100%;
+}
+footer .bg-color {
+  background-color: #6070FF;
+  border-top-left-radius: 65px;
+  padding: 142px 0px 95px 0px;
+  background-image: url("../assets/images/contact-bg.png");
+  background-size: 1177px, 655px;
+  background-repeat: no-repeat;
+  background-position-y: 50px;
+  background-position-x: center;
 }
 footer h2 {
-  text-align: center;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
 }
 footer p {
+  display: flex;
+  font-weight: 400;
+  justify-content: center;
   text-align: center;
 }
+footer .row {
+  padding: 0px 24px;
+}
+footer label {
+  display: none !important;
+}
 footer form {
-  max-width: 447px;
+  width: 447px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer form button {
+  width: 142px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 375px) {
