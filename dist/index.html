@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar navbar-expand">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="./assets/images/logoBlack.png" alt="Logo">
@@ -53,10 +53,10 @@
         <div class="cards">
             <div class="card mb-3">
                 <div class="row g-0">
-                  <div class="col-md-6 col-6">
+                  <div class="col-md-6 col-12">
                     <img src="/dist/assets/images/Snapshoot-PortfolioD.png" class="img-fluid rounded-start" alt="...">
                   </div>
-                  <div class="col-md-6 col-6">
+                  <div class="col-md-6 col-12 details">
                     <div class="card-body">
                       <h4 class="card-title">Tonic</h4>
                       <div class="subtitle">
@@ -83,11 +83,11 @@
               </div>
 
               <div class="card mb-3">
-                <div class="row g-0">
-                  <div class="col-md-6 col-6">
+                <div class="row g-0 card-2">
+                  <div class="col-md-6 col-12">
                     <img src="./assets/images/Snapshoot-Portfolio3.png" class="img-fluid rounded-start" alt="...">
                   </div>
-                  <div class="col-md-6 col-6">
+                  <div class="col-md-6 col-12">
                     <div class="card-body">
                       <h4 class="card-title">Multi-Post Stories</h4>
                       <div class="subtitle">
@@ -103,7 +103,7 @@
                       <div class="small-btn">
                         <ul>
                             <li>Html</li>
-                            <li>Ruby on rails</li>
+                            <li class="desktop">Ruby on rails</li>
                             <li>css</li>
                             <li>javascript</li>
                         </ul>
@@ -116,10 +116,10 @@
 
               <div class="card mb-3">
                 <div class="row g-0">
-                  <div class="col-md-6 col-6">
+                  <div class="col-md-6 col-12">
                     <img src="./assets/images/Snapshoot-Portfolio4.png" class="img-fluid rounded-start" alt="...">
                   </div>
-                  <div class="col-md-6 col-6">
+                  <div class="col-md-6 col-12">
                     <div class="card-body">
                       <h4 class="card-title">Facebook 360</h4>
                       <div class="subtitle">
@@ -135,7 +135,7 @@
                       <div class="small-btn">
                         <ul>
                             <li>Html</li>
-                            <li>Ruby on rails</li>
+                            <li class="desktop">Ruby on rails</li>
                             <li>css</li>
                             <li>javascript</li>
                         </ul>
@@ -147,11 +147,11 @@
               </div>
 
               <div class="card mb-3">
-                <div class="row g-0">
-                  <div class="col-md-6 col-6">
+                <div class="row g-0  card-4">
+                  <div class="col-md-6 col-12">
                     <img src="./assets/images/Snapshoot-Portfolio5.png" class="img-fluid rounded-start" alt="...">
                   </div>
-                  <div class="col-md-6 col-6">
+                  <div class="col-md-6 col-12">
                     <div class="card-body">
                       <h4 class="card-title">Uber Navigation</h4>
                       <div class="subtitle">
@@ -167,7 +167,7 @@
                       <div class="small-btn">
                         <ul>
                             <li>Html</li>
-                            <li>Ruby on rails</li>
+                            <li class="desktop">Ruby on rails</li>
                             <li>css</li>
                             <li>javascript</li>
                         </ul>
@@ -181,11 +181,13 @@
     </section>
 
     <section class="self">
-        <div class="about">
-            <h2>About Myself</h2>
-            <p>Hello I’m a software developer! I can help you build a<br> product , feature or website Look through some of my<br> work and experience! If you like what you see and have<br> a project you need coded, don’t hestiate to contact me.</p>
-            <a>LET'S CONNECT</a>
-            <div class="socials">
+      <div class="container">
+        <div class="row">
+          <div class="about col col-12 col-md-5 mb-5">
+            <h3>About Myself</h3>
+            <p class="mt-4">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+            <a><h6>LET'S CONNECT<h6></a>
+            <div class="socials mt-4">
                 <ul>
                     <li><a><img src="./assets/images/twitter.svg" alt="twitter" class="icon"></a></li>
                     <li><a><img src="./assets/images/Linkedin.svg" alt="Linkedin" class="icon"></a></li>
@@ -194,42 +196,44 @@
                     <li><a><img src="./assets/images/Vector-4.svg" alt="Github" class="icon"></a></li>
                 </ul>
             </div>
-            <button class="btn btn-primary">Get My Resume</button>
+            <button class="btn btn-outline-primary">Get My Resume</button>
         </div>
-        <div class="languages">
+        <div class="languages col col-12 col-md-7 mt-2">
             <ul>
-                <li>
-                    <a>languages</a>
-                    <img src="..." alt="">
+                <li class="arrow mb-4">
+                    <a><h5>languages</h5></a>
+                    <img src="./assets/images/arrow-down.png" alt="Arrow down">
                 </li>
-                <li>
-                    <ul>
+                <li class="mt-4">
+                    <ul class="lang-icon">
                         <li>
-                            <img src="..." alt="" srcset="">
+                            <img src="./assets/images/js.png" alt="js">
                             <a>javascript</a>
                         </li>
                         <li>
-                            <img src="..." alt="" srcset="">
+                            <img src="./assets/images/html.png" alt="html">
                             <a>html</a>
                         </li>
                         <li>
-                            <img src="..." alt="" srcset="">
+                            <img src="./assets/images/css.png" alt="css">
                             <a>Css</a>
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a>Frameworks</a>
-                    <img src="..." alt="">
+                <li class="arrow mt-5">
+                    <a><h5>Frameworks</h5></a>
+                    <img src="./assets/images/arrow-side.png" alt="arrow side">
                 </li>
                 <hr>
-                <li>
-                    <a>Skills</a>
-                    <img src="..." alt="">
+                <li class="arrow mt-4">
+                    <a><h5>Skills</h5></a>
+                    <img src="./assets/images/arrow-side.png" alt="arrow side">
                 </li>
                 <hr>
             </ul>
         </div>
+        </div>
+      </div>
     </section>
 
     <footer>
